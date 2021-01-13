@@ -10,7 +10,10 @@ use lastguest\Murmur;
 	 {
 
 	 	$cc=file_get_contents($_POST["icourl"]);
+
 	 	$cc=base64_encode($cc);
+		echo $cc;
+		echo "<br>";
 		echo "mmh3 is ". Murmur::hash3($cc);
 	 	 
 	 }
