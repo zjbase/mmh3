@@ -19,8 +19,31 @@ include "MurmurHashUtils.php";
   		$cc=$cc.'\n';
 		echo $cc;
 		echo "<br/>";
-		echo "mmh3 is ".   murmurhash64a($cc);
+		echo "mmh3 is ".   murmurhash1($cc); 
+		echo "<br/>";
+		echo "mmh3 is ".   murmurhash1_aligned($cc); 
+		echo "<br/>";
+		echo "mmh3 is ".   murmurhash2($cc); 
+		echo "<br/>";
+		echo "mmh3 is ".   murmurhash64a($cc); 
+		echo "<br/>";
+		echo "mmh3 is ".   murmurhash64b($cc); 
+		echo "<br/>";
+		echo "mmh3 is ".   murmurhash2a($cc); 
+		echo "<br/>";
+
+		echo "mmh3 is ".   murmurhash_neutral2($cc); 
+		echo "<br/>";
+
+		echo "mmh3 is ".   murmurhash_aligned2($cc); 
+		echo "<br/>";
+
+		
+		echo "mmh3 is ".   murmurhash3_x86_32($cc); 
+		echo "<br/>";
  
+ 
+
 	 	 //999357577
 	 	 //999357577
 
