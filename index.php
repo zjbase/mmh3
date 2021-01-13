@@ -21,7 +21,7 @@ use lastguest\Murmur;
 		echo "<br>";
 		echo "mmh3 is ". Murmur::hash3_int($s);
 		echo "<br>";
-		echo Murmur::hash3_int('foo')
+		echo Murmur::hash3_int('foo');
 
 	 	 //999357577
 
