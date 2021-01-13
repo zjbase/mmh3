@@ -19,7 +19,7 @@ include "MurmurHashUtils.php";
   		$cc=$cc.'\n';
 		echo $cc;
 		echo "<br/>";
-		echo "mmh3 is ".   murmurhash2a($cc);
+		echo "mmh3 is ".   murmurhash64a($cc);
  
 	 	 //999357577
 	 	 //999357577
