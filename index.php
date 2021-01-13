@@ -14,10 +14,10 @@ use lastguest\Murmur;
 	 if($_POST)
 	 {
 
-
-
-		echo Murmur::hash3("Hello World");
-	 	var_dump($_POST);
+	 	$cc=file_get_contenst($_POST["icourl"]);
+	 	$cc=base64_encode($cc);
+		echo Murmur::hash3($cc);
+	 	 
 	 }
 ?>
  
