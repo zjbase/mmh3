@@ -1,7 +1,7 @@
 <?php
 use lastguest\Murmur;
-include "vendoe/autoload.php";
-include "MurmurHashUtils.php";
+include "vendor/autoload.php";
+ 
 ?>
 <html>
 <body>
