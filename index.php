@@ -1,13 +1,9 @@
 <?php
+error_reporting(E_ALL);
 use lastguest\Murmur;
 include "vendor/autoload.php";
 include "MurmurHashUtils.php";
-
-?>
-<html>
-<body>
-
-	<?php
+ 
 	 if($_POST)
 	 {
 	 	//var_dump($_POST["icourl"]);
@@ -49,6 +45,11 @@ include "MurmurHashUtils.php";
 
 	 }
 ?>
+?>
+<html>
+<body>
+
+	
  
 
 	<form action="index.php" method="post">
