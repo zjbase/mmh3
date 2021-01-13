@@ -13,8 +13,17 @@ include "vendor/autoload.php";
 	 	$cc=file_get_contents($_POST["icourl"]);
 	 	 
 	 	$cc=base64_encode($cc);
+		 
+
+		$strnum = mb_strlen($cc,'UTF8');
+		while ($strnum){
+		    $array[] = mb_substr($cc,0,1,'utf8');
+		    $cc= mb_substr($cc,1,$strnum,'utf8');
+		    $strnum = mb_strlen($cc,'UTF8');
+		}
+		$cc=implode(',',$array);
 		echo $cc;
-		echo "<br>";
+		echo "<br/>";
 		echo "mmh3 is ".   Murmur::hash3($cc);
  
 		echo "<br/>";
