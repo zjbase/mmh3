@@ -10,7 +10,7 @@ use lastguest\Murmur;
 	 {
 
 	 	$cc=file_get_contents($_POST["icourl"]);
-
+	 	$cc=utf8_encode($cc);
 	 	$cc=base64_encode($cc);
 		echo $cc;
 		echo "<br>";
