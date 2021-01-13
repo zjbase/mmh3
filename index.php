@@ -19,8 +19,7 @@ include "MurmurHashUtils.php";
 		 echo $s;
 		echo "<br>";
 		echo "mmh3 is ". MurmurHashUtils::hash32($s);
-		echo "<br>";
-		echo Murmur::hash3_int('foo');
+ 
 
 	 	 //999357577
 
