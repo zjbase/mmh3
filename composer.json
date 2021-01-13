@@ -1,0 +1,5 @@
+{
+    "require": {
+        "lastguest/murmurhash": "^2.0"
+    }
+}
