@@ -14,7 +14,7 @@ include "vendor/autoload.php";
 	 	 
 	 	$cc=base64_encode($cc);
 		 
- 		$cc=join("\n",str_split($cc,76));
+ 		$cc=join('\n',str_split($cc,76));
   
 		echo $cc;
 		echo "<br/>";
