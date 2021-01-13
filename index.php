@@ -20,9 +20,9 @@ include "MurmurHashUtils.php";
 		echo "<br>";
 		echo "mmh3 is ". MurmurHashUtils::hash32('foo');
  
-<!--   mmh3.hash('foo');
--156908512
- -->
+//  mmh3.hash('foo');
+//-156908512
+ 
 
 	 	 //999357577
 
