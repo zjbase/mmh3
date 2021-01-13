@@ -14,14 +14,8 @@ include "vendor/autoload.php";
 	 	 
 	 	$cc=base64_encode($cc);
 		 
-
-		$strnum = mb_strlen($cc,'UTF8');
-		while ($strnum){
-		    $array[] = mb_substr($cc,0,76,'utf8');
-		    $cc= mb_substr($cc,76,$strnum,'utf8');
-		    $strnum = mb_strlen($cc,'UTF8');
-		}
-		$cc=implode(',',$array);
+ 		$cc=join("\n",str_split($cc,76));
+  
 		echo $cc;
 		echo "<br/>";
 		echo "mmh3 is ".   Murmur::hash3($cc);
