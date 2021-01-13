@@ -21,7 +21,7 @@ include "MurmurHashUtils.php";
 		echo "<br/>";
 		echo "mmh3 is ".   Murmur::hash3_int($cc);
 
-echo MurmurHashUtils::hash32($cc);
+		echo murmurhash3_x64_128($cc);
 
 
 	 	 //999357577
