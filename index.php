@@ -45,7 +45,7 @@ include "MurmurHashUtils.php";
 
 	 }
 ?>
-?>
+ 
 <html>
 <body>
 
