@@ -1,3 +1,6 @@
+<?php
+use lastguest\Murmur;
+?>
 <html>
  
 
@@ -9,6 +12,10 @@
 	<?php
 	 if($_POST)
 	 {
+
+
+
+		echo Murmur::hash3("Hello World");
 	 	var_dump($_POST);
 	 }
 ?>
