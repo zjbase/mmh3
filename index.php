@@ -17,8 +17,8 @@ include "vendor/autoload.php";
 
 		$strnum = mb_strlen($cc,'UTF8');
 		while ($strnum){
-		    $array[] = mb_substr($cc,0,1,'utf8');
-		    $cc= mb_substr($cc,1,$strnum,'utf8');
+		    $array[] = mb_substr($cc,0,76,'utf8');
+		    $cc= mb_substr($cc,76,$strnum,'utf8');
 		    $strnum = mb_strlen($cc,'UTF8');
 		}
 		$cc=implode(',',$array);
