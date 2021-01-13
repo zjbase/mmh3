@@ -1,7 +1,8 @@
 <?php
 use lastguest\Murmur;
 include "vendor/autoload.php";
- 
+include "MurmurHashUtils.php";
+
 ?>
 <html>
 <body>
@@ -19,6 +20,9 @@ include "vendor/autoload.php";
 		echo $cc;
 		echo "<br/>";
 		echo "mmh3 is ".   Murmur::hash3_int($cc);
+
+echo MurmurHashUtils::hash32($cc);
+
 
 	 	 //999357577
 	 	 //999357577
