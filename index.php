@@ -18,8 +18,8 @@ include "vendor/autoload.php";
   		$cc=$cc.'\n';
 		echo $cc;
 		echo "<br/>";
-		echo "mmh3 is ".   Murmur::hash3_int($cc);
-  
+		echo "mmh3 is ".   Murmur::hash3_int($cc,'base64');
+
 	 	 //999357577
 	 	 //999357577
 
